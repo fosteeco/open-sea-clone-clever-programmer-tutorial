@@ -70,7 +70,7 @@ const Collection = () => {
       'https://eth-rinkeby.alchemyapi.io/v2/0gijwhXPrclNZqx0lFpt7nyGfrrtZEZR'
     )
     return sdk.getMarketplaceModule(
-      '0x93A771F7ce845C33381f677489cF21a5964EDD0b'
+      '0x5eF4e865F8590531FedcdD6325F192d8a0bF4ffd'
     )
   }, [provider])
 
@@ -172,6 +172,17 @@ const Collection = () => {
                 {collection?.allOwners ? collection.allOwners.length : ''}
               </div>
               <div className={style.statName}>Owners</div>
+            </div>
+            <div className={style.collectionStat}>
+              <div className={style.statValue}>
+                <img
+                  src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+                  alt="eth"
+                  className={style.ethLogo}
+                />
+                {collection?.floorPrice}
+              </div>
+              <div className={style.statName}>floor price</div>
             </div>
             <div className={style.collectionStat}>
               <div className={style.statValue}>
